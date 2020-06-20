@@ -21,8 +21,8 @@ window.addEventListener('devicemotion', function(event) {
   var xacceleration = Math.round(event.acceleration.x*10)/10;
  document.getElementById("accel-x").innerHTML = xacceleration;
  
- var xacceleration = Math.round(event.accelerationIncludingGravity.x*10)/10;                                
- document.getElementById("neigung-x").innerHTML = xacceleration;
+                              
+ document.getElementById("neigung-x").innerHTML = Math.round(event.accelerationIncludingGravity.x*10)/10; 
                                     
                                        
  });
